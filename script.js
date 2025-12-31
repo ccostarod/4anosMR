@@ -181,7 +181,9 @@ function handleEnterKey(e) {
 function startTransition() {
     if (!canContinue) return;
     
-    terminalScreen.classList.add('hidden');
+    // Esconder terminal completamente
+    terminalScreen.style.display = 'none';
+    
     loveContent.classList.add('visible');
     
     // Inicializar slideshow, música e efeito typewriter
@@ -287,8 +289,11 @@ function typeWriter() {
         
         // Auto-scroll suave
         typedTextElement.scrollIntoView({ behavior: 'smooth', block: 'end' });
+    } else {
+        // Esconder cursor quando terminar
+        const cursor = document.querySelector('.typing-cursor');
+        if (cursor) cursor.style.display = 'none';
     }
-    // Texto terminou de digitar
 }
 
 // ==================== MÚSICA DE FUNDO ====================
