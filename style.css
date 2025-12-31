@@ -315,24 +315,32 @@ body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; overflow-x:
 
 /* Footer */
 .footer-message {
-    background: linear-gradient(135deg, #ffd700, #ff69b4);
-    padding: 30px;
+    background: white;
+    padding: 50px 30px;
     text-align: center;
     margin-top: 60px;
+    border-top: 3px solid #ff69b4;
+    box-shadow: 0 -5px 20px rgba(0,0,0,0.05);
 }
 
 .footer-message p {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
-    animation: heartbeat 1.5s infinite;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #d6336c;
+    margin: 0;
+    font-family: 'Georgia', serif;
+    letter-spacing: 0.5px;
 }
 
-@keyframes heartbeat {
-    0%, 100% { transform: scale(1); }
-    25% { transform: scale(1.05); }
-    50% { transform: scale(1); }
+@media (max-width: 768px) {
+    .footer-message {
+        padding: 40px 20px;
+        margin-top: 40px;
+    }
+    
+    .footer-message p {
+        font-size: 1.3rem;
+    }
 }
 
 /* ==================== SEÇÃO DE FOTOS ==================== */

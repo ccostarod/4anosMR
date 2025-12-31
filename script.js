@@ -286,9 +286,6 @@ function typeWriter() {
         // Variar velocidade para parecer mais natural
         const variance = Math.random() * 20;
         setTimeout(typeWriter, typingSpeed + variance);
-        
-        // Auto-scroll suave
-        typedTextElement.scrollIntoView({ behavior: 'smooth', block: 'end' });
     } else {
         // Esconder cursor quando terminar
         const cursor = document.querySelector('.typing-cursor');
