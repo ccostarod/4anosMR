@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 Anos de Nós</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- TELA 1: JOGO DO CORAÇÃO IMPOSSÍVEL -->
+    <div id="heart-game">
+        <div class="game-container">
+            <h1 class="game-title">❤️ Surpresa para você! ❤️</h1>
+            <p class="game-instruction" id="game-message">Clique no coração para liberar a surpresa</p>
+            <div class="attempts-counter">Tentativas: <span id="attempts">0</span>/3</div>
+            <div id="heart" class="heart">❤️</div>
+        </div>
+    </div>
+
+    <!-- TELA 2: TERMINAL -->
+    <div id="terminal-screen" style="display: none;">
+        <div id="console-output"></div>
+    </div>
+
+    <!-- TELA 3: CONTEÚDO PRINCIPAL -->
+        <div id="console-output"></div>
+        <div><span class="cursor"></span></div>
+    </div>
+
+    <div id="love-content">
+        <!-- Música de fundo (auto-play) -->
+        <audio id="background-music" loop autoplay>
+            <source src="assets/yellow.mp3" type="audio/mpeg">
+        </audio>
+
+        <!-- Container Principal -->
+        <div class="main-container">
+            <!-- Seção de Fotos (Slideshow Automático) -->
+            <div class="slideshow-section">
+                <div class="slideshow-wrapper">
+                    <div class="photo-slideshow" id="photo-slideshow">
+                        <!-- As fotos serão inseridas dinamicamente aqui -->
+                    </div>
+                    <div class="slideshow-overlay">
+                        <h1 class="title-overlay">4 Anos de Nós ❤️</h1>
+                        <div class="photo-counter">
+                            <span id="current-number">1</span> / <span id="total-number">32</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Seção de Texto -->
+            <div class="letter-section">
+                <div class="letter-container">
+                    <div class="letter-header">
+                        <span class="date">31 de Dezembro, 2025</span>
+                        <span class="recipient">Para: Mariana ❤️</span>
+                    </div>
+                    
+                    <div class="letter-body">
+                        <p id="typed-text"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer-message">
+            <p>❤️ Preparada para mais um ano com seu namorado? ❤️</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
